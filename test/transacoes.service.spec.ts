@@ -41,8 +41,7 @@ describe('TransacoesService', () => {
     expect(sort).toHaveBeenCalledWith({ createdAt: -1 });
     expect(resposta.historico).toEqual(transacoesDeExemplo);
     expect(resposta.metricas).toEqual({
-      total: 2299.51,
-      totalReceitas: 2500,
+      saldoTotal: 2299.51,
       totalDespesas: 200.49,
       totalGastoImpulso: 49.99,
     });

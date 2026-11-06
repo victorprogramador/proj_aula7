@@ -4,8 +4,7 @@ import { CriarTransacaoDto } from './dto/criar-transacao.dto.js';
 import { Transacao } from './transacao.schema.js';
 
 export interface MetricasTransacoes {
-  total: number;
-  totalReceitas: number;
+  saldoTotal: number;
   totalDespesas: number;
   totalGastoImpulso: number;
 }
@@ -42,8 +41,7 @@ export class TransacoesService {
 
     const emReais = (valorEmCentavos: number) => valorEmCentavos / 100;
     const metricas: MetricasTransacoes = {
-      total: emReais(totalReceitasCentavos - totalDespesasCentavos),
-      totalReceitas: emReais(totalReceitasCentavos),
+      saldoTotal: emReais(totalReceitasCentavos - totalDespesasCentavos),
       totalDespesas: emReais(totalDespesasCentavos),
       totalGastoImpulso: emReais(totalGastoImpulsoCentavos),
     };

@@ -8,7 +8,7 @@ API REST feita com NestJS e MongoDB para registrar receitas e despesas. A ideia 
 - `GET /transacoes`: devolve o histórico e as métricas calculadas no service.
 - `GET /`: informa que a API está funcionando.
 
-No retorno de `GET /transacoes`, `total` é o saldo (receitas menos despesas), `totalReceitas` soma as receitas, `totalDespesas` soma as despesas e `totalGastoImpulso` soma as despesas marcadas com `consumoConsciente: false`.
+No retorno de `GET /transacoes`, `saldoTotal` é o saldo (receitas menos despesas), `totalDespesas` soma as despesas e `totalGastoImpulso` soma as despesas marcadas com `consumoConsciente: false`.
 
 ## Como executar
 
