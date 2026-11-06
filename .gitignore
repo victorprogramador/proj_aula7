@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+*.tsbuildinfo
+/vitest.config.js
+/vitest.config.js.map
+/vitest.config.d.ts
+/vitest.config.e2e.js
+/vitest.config.e2e.js.map
+/vitest.config.e2e.d.ts
